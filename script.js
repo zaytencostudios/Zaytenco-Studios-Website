@@ -1,5 +1,4 @@
-// Correo que recibe las solicitudes de cotización. Cámbialo por el correo real del estudio.
-const CONTACT_EMAIL = "contacto@zaytencostudios.com";
+const CONTACT_EMAIL = "zaytencostudiosmx@gmail.com";
 
 const I18N = {
   es: {
