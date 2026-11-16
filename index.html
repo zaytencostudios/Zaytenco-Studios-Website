@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaytenco Studios — Desarrollo Web, Aplicaciones y Videojuegos</title>
+  <meta name="description" content="Zaytenco Studios es un estudio de desarrollo de software especializado en páginas web, aplicaciones y videojuegos personalizados. Transformamos ideas en experiencias digitales.">
+  <meta name="theme-color" content="#0a0b12">
+  <meta property="og:title" content="Zaytenco Studios">
+  <meta property="og:description" content="Transformamos ideas en experiencias digitales. Desarrollo web, aplicaciones y videojuegos.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Zaytenco Studios, inicio">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="zg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7c5cff"/>
+              <stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+          <rect width="32" height="32" rx="8" fill="url(#zg)"/>
+          <path d="M10 10h12l-9 12h9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Zaytenco <em>Studios</em></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn-primary btn-sm" href="#contacto">Solicitar cotización</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Estudio de desarrollo de software</p>
+          <h1>Transformamos ideas en <span class="gradient-text">experiencias digitales.</span></h1>
+          <p class="lead">Creamos páginas web, aplicaciones y videojuegos a la medida de cada proyecto.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
+            <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+
+        <div class="code-window" aria-hidden="true">
+          <div class="code-bar"><i></i><i></i><i></i><span>proyecto.js</span></div>
+<pre><code><span class="c-k">const</span> proyecto = <span class="c-k">await</span> zaytenco.<span class="c-f">crear</span>({
+  idea: <span class="c-s">"la tuya"</span>,
+  tipo: [<span class="c-s">"web"</span>, <span class="c-s">"app"</span>, <span class="c-s">"videojuego"</span>],
+  diseño: <span class="c-s">"a la medida"</span>,
+});
+
+proyecto.<span class="c-f">lanzar</span>(); <span class="c-c">// 🚀</span><span class="caret"></span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Nuestros Servicios</p>
+          <h2>Transformamos ideas en experiencias digitales.</h2>
+          <p>Somos un estudio de desarrollo de software especializado en la creación de soluciones digitales personalizadas. Trabajamos en tres áreas principales:</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8M12 18v3"/></svg>
+            </div>
+            <h3>Desarrollo Web</h3>
+            <p>Diseñamos y desarrollamos sitios web modernos, funcionales y adaptables a diferentes dispositivos, desde páginas informativas hasta plataformas web personalizadas.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8h10a5 5 0 0 1 4.9 6l-.6 3a2.5 2.5 0 0 1-4.4 1L15 16H9l-1.9 2a2.5 2.5 0 0 1-4.4-1l-.6-3A5 5 0 0 1 7 8Z"/><path d="M8 11v3M6.5 12.5h3M15.5 11.5h.01M17.5 13.5h.01"/></svg>
+            </div>
+            <h3>Desarrollo de Videojuegos</h3>
+            <p>Creamos experiencias interactivas y videojuegos personalizados, incluyendo mecánicas de juego, interfaces, sistemas y entornos digitales.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+            </div>
+            <h3>Desarrollo de Aplicaciones</h3>
+            <p>Desarrollamos soluciones de software para dispositivos móviles y computadoras, con diseños intuitivos y funcionalidades adaptadas a los objetivos de cada proyecto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="section section-alt" id="nosotros">
+      <div class="container about">
+        <div class="reveal">
+          <p class="eyebrow">Nosotros</p>
+          <h2>Un estudio, tres especialidades.</h2>
+          <p>En Zaytenco Studios cada proyecto se construye a la medida: escuchamos tu idea, la convertimos en un plan claro y la desarrollamos con atención al detalle, ya sea un sitio web, una aplicación o un videojuego.</p>
+        </div>
+        <ul class="pillars reveal">
+          <li><strong>Personalizado</strong><span>Soluciones pensadas para los objetivos de cada proyecto.</span></li>
+          <li><strong>Multiplataforma</strong><span>Web, dispositivos móviles y computadoras.</span></li>
+          <li><strong>Intuitivo</strong><span>Diseños modernos, funcionales y fáciles de usar.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta-copy">
+            <p class="eyebrow">Contacto</p>
+            <h2>¿Tienes un proyecto en mente?</h2>
+            <p>Cuéntanos tu idea y recibe una cotización personalizada.</p>
+          </div>
+
+          <form class="quote-form" id="quote-form" novalidate>
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="servicio">Tipo de proyecto</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option>Página Web</option>
+                <option>Aplicación</option>
+                <option>Videojuego</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="mensaje">Cuéntanos tu idea</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Solicitar cotización</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Zaytenco Studios. Todos los derechos reservados.</span>
+      <nav aria-label="Pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
